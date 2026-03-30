@@ -7,6 +7,7 @@ import WhatYoullDo from "@/components/WhatYoullDo";
 import Tiers from "@/components/Tiers";
 import HowToJoin from "@/components/HowToJoin";
 import MeetTheTeam from "@/components/MeetTheTeam";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <WeWantYou2 />
       <HowToJoin />
       <MeetTheTeam />
+      <Footer />
     </main>
   );
 }
