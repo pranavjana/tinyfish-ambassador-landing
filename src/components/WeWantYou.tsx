@@ -55,29 +55,20 @@ export default function WeWantYou() {
                 <div className="grid md:grid-cols-[1fr_1px_1fr] gap-10 md:gap-12">
                   <div className="space-y-5 text-neutral-500 text-[15px] leading-relaxed font-sans">
                     <p>
-                      The TinyFish Ambassador Programme isn&apos;t a gig — it&apos;s a
-                      career accelerator. You&apos;ll work directly with our growth team,
-                      create content that reaches thousands, and represent TinyFish at
-                      events that matter.
+                      TinyFish is building infrastructure that powers the <span className="text-[#FF6700]">next generation of web agents</span>. But great technology doesn&apos;t spread on its own. It spreads through people who understand it, believe in it, and can show others why it matters.
                     </p>
                     <p>
-                      Applications are reviewed on a rolling basis. Phase 1 spots are
-                      limited.
+                      That&apos;s what the Ambassador Programme is. A <span className="text-[#FF6700]">global community</span> of creators and community leaders at the forefront of the agentic web revolution.
                     </p>
                   </div>
                   <div className="hidden md:block bg-neutral-200" />
                   <div className="space-y-5 text-neutral-500 text-[15px] leading-relaxed font-sans">
                     <p>
-                      We tier by impact. Start as an Ambassador, prove yourself, and
-                      advance to Senior Ambassador or Fellow with monthly stipends up to
-                      $4,000.
+                      This is not a sponsorship. It&apos;s a <span className="text-[#FF6700]">partnership</span>. Ambassadors don&apos;t just talk about TinyFish. They build with it, represent it, and help shape what it becomes.
                     </p>
-                    <div className="flex items-center gap-3 pt-2">
-                      <span className="inline-block w-8 h-px bg-[#FF6700]/40" />
-                      <span className="font-[family-name:var(--font-mono)] text-[10px] text-[#FF6700] uppercase tracking-[0.2em]">
-                        Up to $4k/month
-                      </span>
-                    </div>
+                    <p>
+                      You get real access, real experience, and a real network. We get people who genuinely care about what we&apos;re building.
+                    </p>
                   </div>
                 </div>
               </AnimateIn>

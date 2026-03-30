@@ -81,7 +81,7 @@ export default function Tiers() {
           {TIERS.map((tier, i) => (
             <AnimateIn key={i} variant="fadeUp" delay={0.2 + i * 0.15}>
               <Intersection2>
-                <div className="px-4 py-8 md:px-14 md:py-12">
+                <div className={`px-4 py-8 md:px-14 md:py-12 ${i === 0 ? 'bg-[#FF6700]/[0.06] ring-1 ring-[#FF6700]/20' : ''}`}>
                   <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-14">
                     {/* Left: identity */}
                     <div>
