@@ -3,7 +3,7 @@ import AnimateIn from "@/components/AnimateIn";
 
 export default function WeWantYou() {
   return (
-    <section className="relative py-16 md:py-24 bg-white overflow-hidden">
+    <section id="about" className="relative py-16 md:py-24 bg-white overflow-hidden scroll-mt-16">
       {/* Scattered cross/plus marks */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         {[

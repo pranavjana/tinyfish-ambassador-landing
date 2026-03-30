@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inter, geistMono, hostGrotesk, pristine, gambarino, ranade } from "@/lib/fonts";
+import { generalSans, geistMono, hostGrotesk, pristine, gambarino, ranade } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,9 +16,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${geistMono.variable} ${hostGrotesk.variable} ${pristine.variable} ${gambarino.variable} ${ranade.variable} h-full antialiased`}
+      className={`${generalSans.variable} ${geistMono.variable} ${hostGrotesk.variable} ${pristine.variable} ${gambarino.variable} ${ranade.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-[family-name:var(--font-body)]">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );
 }

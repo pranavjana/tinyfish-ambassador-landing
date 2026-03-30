@@ -58,7 +58,7 @@ const ACTIVITIES = [
 
 export default function WhatYoullDo() {
   return (
-    <section className="relative py-16 md:py-24 bg-white overflow-hidden">
+    <section id="role" className="relative py-16 md:py-24 bg-white overflow-hidden scroll-mt-16">
       {/* Scattered cross/plus marks */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         {[
@@ -135,7 +135,7 @@ export default function WhatYoullDo() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-[family-name:var(--font-mono)] text-lg md:text-xl font-semibold text-neutral-900 mb-3 leading-snug">
+                  <h3 className="font-[family-name:var(--font-mono)] text-lg md:text-xl font-normal text-neutral-900 mb-3 leading-snug">
                     {item.title}
                   </h3>
 

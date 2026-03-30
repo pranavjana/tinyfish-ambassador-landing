@@ -1,12 +1,9 @@
 import localFont from "next/font/local";
 
-export const inter = localFont({
+export const generalSans = localFont({
   src: [
-    { path: "../fonts/Inter.ttf", weight: "400", style: "normal" },
-    { path: "../fonts/Inter-Medium.ttf", weight: "500", style: "normal" },
-    { path: "../fonts/Inter-SemiBold.ttf", weight: "600", style: "normal" },
-    { path: "../fonts/Inter-Bold.ttf", weight: "700", style: "normal" },
-    { path: "../fonts/Inter-ExtraBold.ttf", weight: "800", style: "normal" },
+    { path: "../fonts/GeneralSans-Variable.ttf", style: "normal" },
+    { path: "../fonts/GeneralSans-VariableItalic.ttf", style: "italic" },
   ],
   variable: "--font-sans",
 });

@@ -40,12 +40,12 @@ export default function Hero() {
           color1="#FF7A1A"
           color2="#FF9A4D"
           color3="#FFBB78"
-          timeSpeed={0.6}
+          timeSpeed={0.9}
           colorBalance={-0.15}
-          warpStrength={1.5}
-          warpFrequency={6.0}
-          warpSpeed={4.0}
-          warpAmplitude={35.0}
+          warpStrength={1.8}
+          warpFrequency={6.5}
+          warpSpeed={5.0}
+          warpAmplitude={30.0}
           blendAngle={0.0}
           blendSoftness={0.05}
           rotationAmount={500.0}
@@ -64,26 +64,57 @@ export default function Hero() {
       </div>
 
       {/* Nav */}
-      <nav className="relative z-20 flex items-center justify-between px-4 md:px-8 py-6">
-        <Image
-          src="/fish-discover.svg"
-          alt="TinyFish"
-          width={36}
-          height={36}
-          priority
-        />
-        <a
-          href="/apply"
-          className="border border-white/30 text-white text-xs font-semibold tracking-widest uppercase px-6 py-3 rounded-full hover:bg-white/10 transition-colors"
-        >
-          Apply Now
-        </a>
+      <nav className="relative z-20 flex items-center justify-between px-6 md:px-10 py-4">
+        <div className="flex items-center gap-3">
+          <Image
+            src="/fish-discover.svg"
+            alt="TinyFish"
+            width={28}
+            height={28}
+            priority
+          />
+          <span className="font-[family-name:var(--font-mono)] text-xs text-white font-semibold uppercase tracking-[0.2em] hidden md:inline">
+            TinyFish Ambassador Program
+          </span>
+        </div>
+        <div className="flex items-center gap-6">
+          <a
+            href="#about"
+            className="font-[family-name:var(--font-mono)] text-xs text-white/70 font-semibold uppercase tracking-[0.15em] hover:text-white transition-colors hidden md:inline"
+          >
+            About
+          </a>
+          <a
+            href="#role"
+            className="font-[family-name:var(--font-mono)] text-xs text-white/70 font-semibold uppercase tracking-[0.15em] hover:text-white transition-colors hidden md:inline"
+          >
+            The Role
+          </a>
+          <a
+            href="#tiers"
+            className="font-[family-name:var(--font-mono)] text-xs text-white/70 font-semibold uppercase tracking-[0.15em] hover:text-white transition-colors hidden md:inline"
+          >
+            Tiers
+          </a>
+          <a
+            href="#join"
+            className="font-[family-name:var(--font-mono)] text-xs text-white/70 font-semibold uppercase tracking-[0.15em] hover:text-white transition-colors hidden md:inline"
+          >
+            Join
+          </a>
+          <a
+            href="/apply"
+            className="font-[family-name:var(--font-mono)] text-xs text-neutral-900 font-semibold uppercase tracking-[0.2em] bg-white px-5 py-2.5 hover:bg-[#FF6700] hover:text-white transition-colors"
+          >
+            Apply Now
+          </a>
+        </div>
       </nav>
 
       {/* Hero content */}
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 md:px-6">
         {/* Small label */}
-        <p className="font-[family-name:var(--font-pristine)] text-[10px] md:text-xs text-white/60 mb-8 tracking-wide">
+        <p className="font-[family-name:var(--font-pristine)] text-xs md:text-xs text-white/60 mb-8 tracking-wide">
           Ambassador Programme 2026
         </p>
 
@@ -119,10 +150,10 @@ export default function Hero() {
             className="group relative inline-flex items-center justify-center"
           >
             {/* Radiating rings */}
-            <span className="absolute -inset-1 rounded-full border-2 border-white/55 animate-[radiate_2.5s_ease-out_infinite]" />
-            <span className="absolute -inset-1 rounded-full border-2 border-white/55 animate-[radiate_2.5s_ease-out_infinite_0.5s]" />
-            <span className="absolute -inset-1 rounded-full border-2 border-white/55 animate-[radiate_2.5s_ease-out_infinite_1s]" />
-            <span className="relative bg-white text-neutral-900 text-xs font-semibold tracking-[0.3em] uppercase px-8 md:px-14 py-4 md:py-5 rounded-full">
+            <span className="absolute -inset-1 border-2 border-white/55 animate-[radiate_2.5s_ease-out_infinite]" />
+            <span className="absolute -inset-1 border-2 border-white/55 animate-[radiate_2.5s_ease-out_infinite_0.5s]" />
+            <span className="absolute -inset-1 border-2 border-white/55 animate-[radiate_2.5s_ease-out_infinite_1s]" />
+            <span className="relative bg-white text-neutral-900 text-xs font-semibold tracking-[0.3em] uppercase px-8 md:px-14 py-4 md:py-5">
               Start Application
             </span>
           </a>
@@ -130,12 +161,13 @@ export default function Hero() {
       </div>
 
       {/* Bottom bleed */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 z-10 bg-gradient-to-t from-white via-white/60 to-transparent blur-sm" />
-      <div className="absolute bottom-0 left-0 right-0 h-24 z-10 bg-gradient-to-t from-white to-transparent" />
+      <div className="absolute -bottom-px left-0 right-0 h-32 z-10 bg-gradient-to-t from-white via-white/40 to-transparent" />
 
-      {/* Bottom indicator */}
-      <div className="relative z-20 flex justify-center pb-8">
-        <div className="w-10 h-1 bg-white/30 rounded-full" />
+      {/* Scroll arrow */}
+      <div className="relative z-20 flex justify-center pb-10 animate-bounce">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" className="text-white">
+          <path d="M8 14L18 24L28 14" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
       </div>
     </section>
   );
