@@ -56,7 +56,7 @@ export default function FloatingHeader() {
             <a
               key={label}
               href={`#${label === "The Role" ? "role" : label.toLowerCase()}`}
-              className={`font-[family-name:var(--font-mono)] font-semibold uppercase hover:text-white transition-all duration-500 hidden md:inline ${
+              className={`font-[family-name:var(--font-mono)] font-semibold uppercase hover:text-[#FF6700] transition-all duration-500 hidden md:inline ${
                 scrolled
                   ? "text-[10px] tracking-[0.1em] text-neutral-500"
                   : "text-xs tracking-[0.15em] text-white/70"
