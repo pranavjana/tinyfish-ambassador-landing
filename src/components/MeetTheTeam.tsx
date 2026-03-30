@@ -87,7 +87,7 @@ export default function MeetTheTeam() {
         <AnimateIn variant="fadeUp" delay={0.6}>
           <div className="text-center mt-12 md:mt-16">
             <a
-              href="/apply"
+              href="https://form.typeform.com/to/EEHLger3" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-[#FF6700] text-white text-[10px] md:text-xs font-semibold tracking-[0.3em] uppercase px-12 py-4 hover:bg-[#e65c00] transition-colors duration-300"
             >
               Apply Now

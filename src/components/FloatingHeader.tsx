@@ -62,7 +62,7 @@ export default function FloatingHeader() {
             Join
           </a>
           <a
-            href="/apply"
+            href="https://form.typeform.com/to/EEHLger3" target="_blank" rel="noopener noreferrer"
             className={`font-[family-name:var(--font-mono)] text-xs font-semibold uppercase tracking-[0.2em] px-5 py-2.5 transition-colors ${
               scrolled
                 ? "bg-[#FF6700] text-white hover:bg-[#FF8C38]"

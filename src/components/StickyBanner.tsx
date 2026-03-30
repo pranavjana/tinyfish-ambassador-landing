@@ -15,7 +15,7 @@ export default function StickyBanner() {
         </span>
         <span className="hidden md:inline text-neutral-600">—</span>
         <a
-          href="/apply"
+          href="https://form.typeform.com/to/EEHLger3" target="_blank" rel="noopener noreferrer"
           className="font-[family-name:var(--font-mono)] text-[10px] md:text-xs tracking-[0.15em] uppercase text-[#FF6700] hover:text-[#FF8C38] transition-colors"
         >
           Apply now &rarr;

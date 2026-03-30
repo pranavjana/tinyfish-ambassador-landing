@@ -104,7 +104,7 @@ export default function Hero() {
         {/* CTA button */}
         <div className="mt-16 w-full flex justify-center">
           <a
-            href="/apply"
+            href="https://form.typeform.com/to/EEHLger3" target="_blank" rel="noopener noreferrer"
             className="group relative inline-flex items-center justify-center"
           >
             {/* Radiating rings */}
