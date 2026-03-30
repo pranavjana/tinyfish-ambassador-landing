@@ -99,19 +99,19 @@ export default function Tiers() {
                     {/* Right: details */}
                     <div className="space-y-0">
                       {/* What you do */}
-                      <div className="flex items-start gap-6 py-4 border-b border-dashed border-neutral-200">
+                      <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 py-4 border-b border-dashed border-neutral-200">
                         <span className="font-[family-name:var(--font-mono)] text-[10px] text-neutral-300 uppercase tracking-[0.15em] w-24 shrink-0 pt-0.5">Content</span>
                         <p className="font-sans text-neutral-600 text-sm leading-relaxed">{tier.content}</p>
                       </div>
-                      <div className="flex items-start gap-6 py-4 border-b border-dashed border-neutral-200">
+                      <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 py-4 border-b border-dashed border-neutral-200">
                         <span className="font-[family-name:var(--font-mono)] text-[10px] text-neutral-300 uppercase tracking-[0.15em] w-24 shrink-0 pt-0.5">Events</span>
                         <p className="font-sans text-neutral-600 text-sm leading-relaxed">{tier.events}</p>
                       </div>
-                      <div className="flex items-start gap-6 py-4 border-b border-dashed border-neutral-200">
+                      <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 py-4 border-b border-dashed border-neutral-200">
                         <span className="font-[family-name:var(--font-mono)] text-[10px] text-[#FF6700]/60 uppercase tracking-[0.15em] w-24 shrink-0 pt-0.5">Earnings</span>
                         <p className="font-[family-name:var(--font-mono)] text-neutral-900 text-sm">{tier.compensation}</p>
                       </div>
-                      <div className="flex items-start gap-6 py-4">
+                      <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 py-4">
                         <span className="font-[family-name:var(--font-mono)] text-[10px] text-neutral-300 uppercase tracking-[0.15em] w-24 shrink-0 pt-0.5">Includes</span>
                         <div className="flex flex-wrap gap-2">
                           {tier.perks.map((perk, j) => (

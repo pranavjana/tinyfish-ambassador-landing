@@ -71,8 +71,8 @@ export default function FloatingHeader() {
             rel="noopener noreferrer"
             className={`font-[family-name:var(--font-mono)] font-semibold uppercase transition-all duration-500 ${
               scrolled
-                ? "text-[10px] tracking-[0.15em] bg-neutral-900 text-white px-5 py-2 rounded-full hover:bg-[#FF6700]"
-                : "text-xs tracking-[0.2em] bg-white text-neutral-900 px-5 py-2.5 hover:bg-[#FF6700] hover:text-white"
+                ? "text-[9px] md:text-[10px] tracking-[0.1em] md:tracking-[0.15em] bg-neutral-900 text-white px-3 md:px-5 py-2 rounded-full hover:bg-[#FF6700]"
+                : "text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] bg-white text-neutral-900 px-4 md:px-5 py-2 md:py-2.5 hover:bg-[#FF6700] hover:text-white"
             }`}
           >
             Apply

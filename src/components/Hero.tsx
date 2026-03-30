@@ -39,7 +39,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col overflow-hidden bg-white">
+    <section className="relative min-h-screen flex flex-col overflow-hidden bg-[#FF7A1A]">
       {/* Grainient background */}
       <div className="absolute inset-0 z-0">
         <Grainient
