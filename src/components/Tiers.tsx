@@ -4,7 +4,7 @@ import Intersection2 from "@/components/pixel-perfect/intersection2";
 
 const TIERS = [
   {
-    fish: "/fish-discover.svg",
+    fish: "/Discover.svg",
     name: "Ambassador",
     tier: "01",
     tag: "Open Applications",
@@ -15,7 +15,7 @@ const TIERS = [
     perks: ["TinyFish Pro + API credits", "Early feature access", "Ambassador merch kit", "LinkedIn badge"],
   },
   {
-    fish: "/fish-navigate.svg",
+    fish: "/Navigate.svg",
     name: "Senior Ambassador",
     tier: "02",
     tag: "By Promotion or Invite",
@@ -26,7 +26,7 @@ const TIERS = [
     perks: ["Everything in Tier 1", "Monthly stipend", "Co-creation with content team", "Priority beta access"],
   },
   {
-    fish: "/fish-evolve.svg",
+    fish: "/Train.svg",
     name: "Ambassador Fellow",
     tier: "03",
     tag: "By Promotion or Invite",
@@ -89,8 +89,8 @@ export default function Tiers() {
                         <span className="font-[family-name:var(--font-mono)] text-3xl text-[#FF6700]/20">{tier.tier}</span>
                         <span className="font-[family-name:var(--font-mono)] text-[9px] text-[#FF6700] uppercase tracking-[0.2em]">{tier.tag}</span>
                       </div>
-                      <div className="mb-4">
-                        <Image src={tier.fish} alt={tier.name} width={40} height={40} className="opacity-90" />
+                      <div className="mb-4 w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-[#FFF1E6] to-[#FFE4CF] rounded-xl flex items-center justify-center border border-[#FF6700]/10">
+                        <Image src={tier.fish} alt={tier.name} width={56} height={56} className="w-10 h-10 md:w-14 md:h-14" />
                       </div>
                       <h3 className="font-[family-name:var(--font-mono)] text-lg text-neutral-900 leading-tight mb-2">{tier.name}</h3>
                       <p className="font-sans text-neutral-400 text-xs leading-relaxed">{tier.who}</p>

@@ -10,16 +10,22 @@ const Grainient = dynamic(() => import("@/components/Grainient"), {
 });
 
 const FISH_ICONS = [
-  "/fish-discover.svg",
-  "/fish-evolve.svg",
-  "/fish-navigate.svg",
-  "/fish-observe.svg",
-  "/fish-train.svg",
-  "/fish-1.svg",
-  "/fish-2.svg",
-  "/fish-3.svg",
-  "/fish-4.svg",
-  "/fish-5.svg",
+  "/Discover.svg",
+  "/Navigate.svg",
+  "/Observe.svg",
+  "/Reason.svg",
+  "/Search.svg",
+  "/Train.svg",
+  "/Tiny 4.svg",
+  "/Tiny 5.svg",
+  "/Tiny 7.svg",
+  "/Tiny 8.svg",
+  "/Tiny 11.svg",
+  "/Tiny 13.svg",
+  "/Tiny 15.svg",
+  "/Tiny 16.svg",
+  "/Tiny 17.svg",
+  "/Tiny 25.svg",
 ];
 
 export default function Hero() {
@@ -63,64 +69,16 @@ export default function Hero() {
         />
       </div>
 
-      {/* Nav */}
-      <nav className="relative z-20 flex items-center justify-between px-6 md:px-10 py-4">
-        <div className="flex items-center gap-3">
-          <Image
-            src="/fish-discover.svg"
-            alt="TinyFish"
-            width={28}
-            height={28}
-            priority
-          />
-          <span className="font-[family-name:var(--font-mono)] text-xs text-white font-semibold uppercase tracking-[0.2em] hidden md:inline">
-            TinyFish Ambassador Program
-          </span>
-        </div>
-        <div className="flex items-center gap-6">
-          <a
-            href="#about"
-            className="font-[family-name:var(--font-mono)] text-xs text-white/70 font-semibold uppercase tracking-[0.15em] hover:text-white transition-colors hidden md:inline"
-          >
-            About
-          </a>
-          <a
-            href="#role"
-            className="font-[family-name:var(--font-mono)] text-xs text-white/70 font-semibold uppercase tracking-[0.15em] hover:text-white transition-colors hidden md:inline"
-          >
-            The Role
-          </a>
-          <a
-            href="#tiers"
-            className="font-[family-name:var(--font-mono)] text-xs text-white/70 font-semibold uppercase tracking-[0.15em] hover:text-white transition-colors hidden md:inline"
-          >
-            Tiers
-          </a>
-          <a
-            href="#join"
-            className="font-[family-name:var(--font-mono)] text-xs text-white/70 font-semibold uppercase tracking-[0.15em] hover:text-white transition-colors hidden md:inline"
-          >
-            Join
-          </a>
-          <a
-            href="/apply"
-            className="font-[family-name:var(--font-mono)] text-xs text-neutral-900 font-semibold uppercase tracking-[0.2em] bg-white px-5 py-2.5 hover:bg-[#FF6700] hover:text-white transition-colors"
-          >
-            Apply Now
-          </a>
-        </div>
-      </nav>
-
       {/* Hero content */}
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 md:px-6">
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 md:px-6 w-full">
         {/* Small label */}
-        <p className="font-[family-name:var(--font-pristine)] text-xs md:text-xs text-white/60 mb-8 tracking-wide">
+        <p className="font-[family-name:var(--font-pristine)] text-xs md:text-xs text-white/60 mb-8 tracking-wide text-center w-full">
           Ambassador Programme 2026
         </p>
 
         {/* Massive headline */}
-        <h1 className="font-[family-name:var(--font-host)] text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-white leading-[0.9] text-center uppercase">
-          <span className="flex items-center justify-center gap-2 md:gap-5">
+        <h1 className="font-[family-name:var(--font-host)] text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-white leading-[0.9] text-center uppercase w-full">
+          <span className="flex items-center justify-center gap-2 md:gap-5 w-full">
             <span className="font-[family-name:var(--font-pristine)] normal-case tracking-normal">TinyFish</span>
             <span className="relative inline-block w-[0.9em] h-[0.9em]">
               {FISH_ICONS.map((src, i) => (
@@ -138,13 +96,13 @@ export default function Hero() {
               ))}
             </span>
           </span>
-          <span className="block text-[0.65em] font-[family-name:var(--font-mono)] font-normal tracking-wide mt-[0.4em]">
+          <span className="block text-[0.65em] font-[family-name:var(--font-mono)] font-normal tracking-wide mt-[0.4em] text-center w-full">
             <ScrambleIn text="Ambassador Programme" scrambleSpeed={40} scrambledLetterCount={4} />
           </span>
         </h1>
 
         {/* CTA button */}
-        <div className="mt-16">
+        <div className="mt-16 w-full flex justify-center">
           <a
             href="/apply"
             className="group relative inline-flex items-center justify-center"

@@ -1,10 +1,10 @@
 import AnimateIn, { StaggerChildren, StaggerItem } from "@/components/AnimateIn";
 
 const TEAM = [
-  { name: "Divya Lath", school: "NUS Singapore", img: "https://lh3.googleusercontent.com/aida/ADBb0uhns2m3k_s2hJIODm6f98UNTeEQsx_3ShJ2jseZEhooXj0_eqdXOaZqv0x-byxb1q17PZbdR0hL_yI9TQdfclBeF7K7VuWql8rG324NJJBUH-3xSUsxumcGxTH5F_x4zQh0ZJ0M1eaYRauGmp4kMD_Llt3j0ZhE35hG1TRbjpHIPpperAcvXWX2HGojTIkxMngXdwOy2u2O4R5a4stUh0fLGLnUtvaZ5aDeEUq1PP70RR-3Mx1NfHOomoYq0v3n0qi2_lieUMjHeg" },
-  { name: "Pranav Janakiraman", school: "NUS Singapore", img: "https://lh3.googleusercontent.com/aida/ADBb0uiG2e38IUw7-RriwEq3H3xkV1TxzbdOlWi8wbSakNPxg3MzNda_egJNObxFzFk-7wPZyRSV_ayLZTHevB2fkL_wYB_3Fn3yD_-RSZuO50AVWlA4QOUiUYW6JXULNDUl_CZgXr3SoC9PPRI1O_MrE3cO3xMEDFOWbBqDVllGvxeqdQofy3-ZhmYFAn8-F7a4vr4evQNA4bzlmv0demEtqeLMg3iQgWDT9b5NPrnZ3lGokO-hNDZ4aSj8ZoS9FbM0WQK14U_8f83hbg" },
-  { name: "You?", school: "Your University", img: "/fish-train.svg" },
-  { name: "You?", school: "Your University", img: "/fish-evolve.svg" },
+  { name: "Divya Lath", school: "NUS Singapore", img: "https://lh3.googleusercontent.com/aida/ADBb0uhns2m3k_s2hJIODm6f98UNTeEQsx_3ShJ2jseZEhooXj0_eqdXOaZqv0x-byxb1q17PZbdR0hL_yI9TQdfclBeF7K7VuWql8rG324NJJBUH-3xSUsxumcGxTH5F_x4zQh0ZJ0M1eaYRauGmp4kMD_Llt3j0ZhE35hG1TRbjpHIPpperAcvXWX2HGojTIkxMngXdwOy2u2O4R5a4stUh0fLGLnUtvaZ5aDeEUq1PP70RR-3Mx1NfHOomoYq0v3n0qi2_lieUMjHeg", isPlaceholder: false },
+  { name: "Pranav Janakiraman", school: "NUS Singapore", img: "https://lh3.googleusercontent.com/aida/ADBb0uiG2e38IUw7-RriwEq3H3xkV1TxzbdOlWi8wbSakNPxg3MzNda_egJNObxFzFk-7wPZyRSV_ayLZTHevB2fkL_wYB_3Fn3yD_-RSZuO50AVWlA4QOUiUYW6JXULNDUl_CZgXr3SoC9PPRI1O_MrE3cO3xMEDFOWbBqDVllGvxeqdQofy3-ZhmYFAn8-F7a4vr4evQNA4bzlmv0demEtqeLMg3iQgWDT9b5NPrnZ3lGokO-hNDZ4aSj8ZoS9FbM0WQK14U_8f83hbg", isPlaceholder: false },
+  { name: "You?", school: "Your University", img: "", isPlaceholder: true },
+  { name: "You?", school: "Your University", img: "", isPlaceholder: true },
 ];
 
 export default function MeetTheTeam() {
@@ -52,13 +52,21 @@ export default function MeetTheTeam() {
                   </span>
 
                   {/* Avatar */}
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={member.img}
-                    alt={member.name}
-                    referrerPolicy="no-referrer"
-                    className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover mb-4"
-                  />
+                  {member.isPlaceholder ? (
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-[#FFF1E6] to-[#FFE4CF] border-2 border-dashed border-[#FF6700]/30 flex items-center justify-center mb-4">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-[#FF6700]/50">
+                        <path d="M12 5V19M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                      </svg>
+                    </div>
+                  ) : (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={member.img}
+                      alt={member.name}
+                      referrerPolicy="no-referrer"
+                      className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover mb-4"
+                    />
+                  )}
 
                   {/* Name */}
                   <p className="font-[family-name:var(--font-mono)] text-xs md:text-sm text-neutral-900 text-center leading-tight">

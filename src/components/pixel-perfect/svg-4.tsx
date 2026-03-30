@@ -23,7 +23,7 @@ const Svg4 = () => {
         fill="#FF6700"
         fillOpacity="0.15"
       />
-      <image href="/fish-discover.svg" x="344" y="14" width="55" height="55" />
+      <image href="/Discover.svg" x="344" y="14" width="55" height="55" />
       <rect
         y="1"
         width="64.7445"
@@ -73,7 +73,7 @@ const Svg4 = () => {
         fill="#FF6700"
         fillOpacity="0.15"
       />
-      <image href="/fish-navigate.svg" x="192" y="123" width="55" height="55" />
+      <image href="/Navigate.svg" x="192" y="123" width="55" height="55" />
       <rect
         y="1"
         width="64.7445"
@@ -123,7 +123,7 @@ const Svg4 = () => {
         fill="#FF6700"
         fillOpacity="0.15"
       />
-      <image href="/fish-train.svg" x="38" y="252" width="55" height="55" />
+      <image href="/Train.svg" x="38" y="252" width="55" height="55" />
       <rect
         y="1"
         width="64.7445"

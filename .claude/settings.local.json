@@ -19,7 +19,9 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://www.pixel-perfect.space/r/$name.json\")",
       "Bash(done)",
       "Bash(npm list:*)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://www.aceternity.com/r/$name.json\")"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://www.aceternity.com/r/$name.json\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

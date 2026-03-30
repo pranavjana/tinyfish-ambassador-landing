@@ -23,7 +23,7 @@ const CommunitySvg = () => (
         <feColorMatrix type="matrix" values="0 0 0 0 0.2  0 0 0 0 0.2  0 0 0 0 0.2  -1 -1 -1 1 0" />
       </filter>
     </defs>
-    <image href="/fish-discover.svg" x="131" y="45" width="60" height="60" filter="url(#lines-only)" opacity="0.7" />
+    <image href="/Discover.svg" x="131" y="45" width="60" height="60" filter="url(#lines-only)" opacity="0.7" />
   </svg>
 );
 

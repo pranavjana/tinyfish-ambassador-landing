@@ -1,4 +1,5 @@
 import StickyBanner from "@/components/StickyBanner";
+import FloatingHeader from "@/components/FloatingHeader";
 import Hero from "@/components/Hero";
 import WeWantYou from "@/components/WeWantYou";
 import WeWantYou2 from "@/components/WeWantYou2";
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main className="relative">
       <StickyBanner />
+      <FloatingHeader />
       {/* Scattered gradient blobs */}
       <div className="gradient-blob gradient-blob-1" />
       <div className="gradient-blob gradient-blob-2" />
