@@ -1,7 +1,24 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx:*)"
+      "Bash(npx:*)",
+      "Bash(cp /Users/pranavjanakiraman/Documents/tinyfish-ambas/reference/public/logo.svg /Users/pranavjanakiraman/Documents/tinyfish-ambas/landing/public/)",
+      "Bash(cp /Users/pranavjanakiraman/Documents/tinyfish-ambas/reference/public/fish-*.svg /Users/pranavjanakiraman/Documents/tinyfish-ambas/landing/public/)",
+      "Bash(mkdir -p /Users/pranavjanakiraman/Documents/tinyfish-ambas/landing/src/fonts)",
+      "Bash(cp /Users/pranavjanakiraman/Downloads/GeistMono-100_900.ttf /Users/pranavjanakiraman/Downloads/hostGrotesk-400_800.ttf /Users/pranavjanakiraman/Downloads/Inter-Bold.ttf /Users/pranavjanakiraman/Downloads/Inter-ExtraBold.ttf /Users/pranavjanakiraman/Downloads/Inter-Medium.ttf /Users/pranavjanakiraman/Downloads/Inter-SemiBold.ttf /Users/pranavjanakiraman/Downloads/Inter.ttf /Users/pranavjanakiraman/Downloads/pristine-Bold.ttf /Users/pranavjanakiraman/Documents/tinyfish-ambas/landing/src/fonts/)",
+      "Bash(cp \"/Users/pranavjanakiraman/Documents/tinyfish-ambas/reference/public/Tiny 1.svg\" /Users/pranavjanakiraman/Documents/tinyfish-ambas/landing/public/fish-1.svg)",
+      "Bash(cp \"/Users/pranavjanakiraman/Documents/tinyfish-ambas/reference/public/Tiny 2.svg\" /Users/pranavjanakiraman/Documents/tinyfish-ambas/landing/public/fish-2.svg)",
+      "Bash(cp \"/Users/pranavjanakiraman/Documents/tinyfish-ambas/reference/public/Tiny 3.svg\" /Users/pranavjanakiraman/Documents/tinyfish-ambas/landing/public/fish-3.svg)",
+      "Bash(cp \"/Users/pranavjanakiraman/Documents/tinyfish-ambas/reference/public/Tiny 4.svg\" /Users/pranavjanakiraman/Documents/tinyfish-ambas/landing/public/fish-4.svg)",
+      "Bash(cp \"/Users/pranavjanakiraman/Documents/tinyfish-ambas/reference/public/Tiny 5.svg\" /Users/pranavjanakiraman/Documents/tinyfish-ambas/landing/public/fish-5.svg)",
+      "Bash(python3:*)",
+      "Read(//Users/pranavjanakiraman/Documents/**)",
+      "Read(//Users/pranavjanakiraman/**)",
+      "Bash(for name:*)",
+      "Bash(do echo:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://www.pixel-perfect.space/r/$name.json\")",
+      "Bash(done)",
+      "Bash(npm list:*)"
     ]
   }
 }
