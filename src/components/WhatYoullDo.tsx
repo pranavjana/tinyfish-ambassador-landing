@@ -135,7 +135,7 @@ export default function WhatYoullDo() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-sans text-lg md:text-xl font-semibold text-neutral-900 mb-3 leading-snug">
+                  <h3 className="font-[family-name:var(--font-mono)] text-lg md:text-xl font-semibold text-neutral-900 mb-3 leading-snug">
                     {item.title}
                   </h3>
 
