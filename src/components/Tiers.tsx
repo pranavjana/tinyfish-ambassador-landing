@@ -20,6 +20,7 @@ const TIERS = [
     tier: "02",
     tag: "By Promotion or Invite",
     who: "You've proven yourself. Consistent output, growing influence, trusted voice in your community.",
+    hasAsterisk: true,
     content: "3 pieces/month — 2 short-form + 1 anchor piece",
     events: "Organize 1 event/quarter — co-host TinyFish events",
     compensation: "$2,000/mo stipend + $2/click + $5/signup",
@@ -31,6 +32,7 @@ const TIERS = [
     tier: "03",
     tag: "By Promotion or Invite",
     who: "The inner circle. Your content, events, and voice shape how TinyFish shows up in the world.",
+    hasAsterisk: true,
     content: "4 pieces/month — 2 anchor pieces + 2 short-form",
     events: "Lead major events — workshops, talks, demos at conferences",
     compensation: "$4,000/mo stipend + $2/click + $5/signup",
@@ -92,7 +94,7 @@ export default function Tiers() {
                       <div className="mb-4 w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-[#FFF1E6] to-[#FFE4CF] rounded-xl flex items-center justify-center border border-[#FF6700]/10">
                         <Image src={tier.fish} alt={tier.name} width={56} height={56} className="w-10 h-10 md:w-14 md:h-14" />
                       </div>
-                      <h3 className="font-[family-name:var(--font-mono)] text-lg text-neutral-900 leading-tight mb-2">{tier.name}</h3>
+                      <h3 className="font-[family-name:var(--font-mono)] text-lg text-neutral-900 leading-tight mb-2">{tier.name}{tier.hasAsterisk && <span className="text-[#FF6700]">*</span>}</h3>
                       <p className="font-sans text-neutral-400 text-xs leading-relaxed">{tier.who}</p>
                     </div>
 
@@ -131,9 +133,9 @@ export default function Tiers() {
 
         {/* Advancement note */}
         <AnimateIn variant="fadeUp" delay={0.8}>
-          <div className="mt-10 text-center">
-            <p className="font-[family-name:var(--font-mono)] text-[10px] text-neutral-400 uppercase tracking-[0.2em]">
-              Advancement is earned quarterly on a clear scorecard — not automatic
+          <div className="mt-10">
+            <p className="font-[family-name:var(--font-mono)] text-[10px] text-neutral-400 tracking-[0.1em]">
+              <span className="text-[#FF6700]">*</span> Advancement to Senior Ambassador and Ambassador Fellow is reserved for exceptional ambassadors who have consistently delivered high-quality content, driven measurable growth, and demonstrated genuine commitment to the TinyFish community. Promotion is reviewed quarterly and is never automatic.
             </p>
           </div>
         </AnimateIn>
