@@ -1,9 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function StickyBanner() {
   const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    document.documentElement.style.setProperty("--banner-height", visible ? "41px" : "0px");
+  }, [visible]);
 
   if (!visible) return null;
 

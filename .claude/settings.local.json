@@ -22,7 +22,8 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://www.aceternity.com/r/$name.json\")",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(git push:*)"
     ]
   }
 }
