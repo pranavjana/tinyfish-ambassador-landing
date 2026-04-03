@@ -11,19 +11,19 @@ const TIERS = [
     who: "You're passionate, capable, and ready to build with TinyFish. This is where it starts.",
     content: "3 pieces/month — short videos, written posts, or tutorials",
     events: "1 event/quarter — represent TinyFish at hackathons",
-    compensation: "$2/click + $5/signup, uncapped",
+    compensation: "$3/sign-up + $6/active user, uncapped",
     perks: ["TinyFish Pro + API credits", "Early feature access", "Ambassador merch kit", "LinkedIn badge"],
   },
   {
     fish: "/Navigate.svg",
-    name: "Senior Ambassador",
+    name: "Ambassador Elite",
     tier: "02",
     tag: "By Promotion or Invite",
     who: "You've proven yourself. Consistent output, growing influence, trusted voice in your community.",
     hasAsterisk: true,
     content: "3 pieces/month — 2 short-form + 1 anchor piece",
     events: "Organize 1 event/quarter — co-host TinyFish events",
-    compensation: "$2,000/mo stipend + $2/click + $5/signup",
+    compensation: "$2,000/mo stipend + $3/sign-up + $6/active user",
     perks: ["Everything in Tier 1", "Monthly stipend", "Co-creation with content team", "Priority beta access"],
   },
   {
@@ -35,7 +35,7 @@ const TIERS = [
     hasAsterisk: true,
     content: "4 pieces/month — 2 anchor pieces + 2 short-form",
     events: "Lead major events — workshops, talks, demos at conferences",
-    compensation: "$4,000/mo stipend + $2/click + $5/signup",
+    compensation: "$4,000/mo stipend + $3/sign-up + $6/active user",
     perks: ["Everything in Tier 2", "Premium stipend", "Product roadmap input", "Trip to TinyFish HQ", "Recommendation letters"],
   },
 ];
@@ -135,7 +135,7 @@ export default function Tiers() {
         <AnimateIn variant="fadeUp" delay={0.8}>
           <div className="mt-10">
             <p className="font-[family-name:var(--font-mono)] text-[10px] text-neutral-400 tracking-[0.1em]">
-              <span className="text-[#FF6700]">*</span> Advancement to Senior Ambassador and Ambassador Fellow is reserved for exceptional ambassadors who have consistently delivered high-quality content, driven measurable growth, and demonstrated genuine commitment to the TinyFish community. Promotion is reviewed quarterly and is never automatic.
+              <span className="text-[#FF6700]">*</span> Advancement to Ambassador Elite and Ambassador Fellow is reserved for exceptional ambassadors who have consistently delivered high-quality content, driven measurable growth, and demonstrated genuine commitment to the TinyFish community. Promotion is reviewed quarterly and is never automatic.
             </p>
           </div>
         </AnimateIn>

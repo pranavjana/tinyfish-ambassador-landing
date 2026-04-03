@@ -37,7 +37,7 @@ const ACTIVITIES = [
     label: "Earnings",
     title: "Uncapped compensation",
     description:
-      "$2 per click, $5 per signup. Monthly stipends up to $4,000 for top performers.",
+      "$3 per verified sign-up, $6 per active user. Monthly stipends up to $4,000 for top performers.",
     stat: "$4k",
     statLabel: "per month",
     span: "md:col-span-1",

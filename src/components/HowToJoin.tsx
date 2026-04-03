@@ -3,7 +3,7 @@ import AnimateIn, { StaggerChildren, StaggerItem } from "@/components/AnimateIn"
 
 const STEPS = [
   { number: "01", text: "Apply with your profile and a short pitch" },
-  { number: "02", text: "Interview with the TinyFish growth team" },
+  { number: "02", text: "Get reviewed by the TinyFish growth team" },
   { number: "03", text: "Get onboarded with Pro access and credits" },
   { number: "04", text: "Start creating, earning, and growing" },
 ];

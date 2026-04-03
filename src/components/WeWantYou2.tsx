@@ -67,7 +67,7 @@ export default function WeWantYou2() {
 
         <AnimateIn variant="fadeUp" delay={0.8}>
           <p className="font-[family-name:var(--font-mono)] text-[10px] text-neutral-400 uppercase tracking-[0.2em] text-center mt-10">
-            Meet just one to be eligible
+            Meet at least 2 of 5 to be eligible
           </p>
         </AnimateIn>
       </div>
